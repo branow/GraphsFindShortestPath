@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kpi.courseproject.controllers.MenuTrapController">
+   <children>
+      <BorderPane layoutX="158.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <FlowPane hgap="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bRandom" mnemonicParsing="false" onAction="#bRandomAction" text="Button" />
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </FlowPane>
+         </top>
+         <bottom>
+            <FlowPane alignment="CENTER_RIGHT" columnHalignment="RIGHT" hgap="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="bCancel" mnemonicParsing="false" onAction="#bCancelAction" text="Button" />
+                  <Button fx:id="bAccept" mnemonicParsing="false" onAction="#bAcceptAction" text="Button" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </FlowPane>
+         </bottom>
+         <center>
+            <TableView fx:id="tTraps" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="ctEdges" prefWidth="130.60000038146973" text="C1" />
+                <TableColumn fx:id="ctTraps" prefWidth="448.6000061035156" text="C2" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
